@@ -1,9 +1,16 @@
 export default function Media() {
     return (
-        <div id="Media" className="relative py-24 sm:py-32 flex items-center justify-center isolate overflow-x-hidden overflow-y-auto py-24 sm:py-16 min-h-screen">
-            <div className="mx-auto flex items-center justify-center max-w-xs flex-col gap-y-4">
-                <iframe className="w-460 h-260" width="560" height="315" src="https://www.youtube.com/embed/NaaZTINIz20" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                <h1 className="order-first w-screen text-center text-3xl font-semibold tracking-tight text-gray-300 sm:text-5xl text-shadow">Check out our trailer</h1>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh'}}>
+            <div style={{width: '100%', maxWidth: '900px', margin: 'auto'}}>
+                <h2 style={{textAlign: 'center', fontSize: '3em', fontWeight: 'bold', color: 'grey'}}>Trailer</h2>
+                <div style={{position: 'relative', paddingBottom: '56.25%', height: '0', overflow: 'hidden'}}>
+                    <iframe style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}}
+                            src="https://www.youtube.com/embed/NaaZTINIz20"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                </div>
             </div>
         </div>
     )
