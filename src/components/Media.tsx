@@ -1,6 +1,6 @@
 export default function Media() {
     return (
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh'}}>
+        <div id='Media' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh'}}>
             <div style={{width: '100%', maxWidth: '900px', margin: 'auto'}}>
                 <h2 style={{textAlign: 'center', fontSize: '3em', fontWeight: 'bold', color: 'grey'}}>Trailer</h2>
                 <div style={{position: 'relative', paddingBottom: '56.25%', height: '0', overflow: 'hidden'}}>
