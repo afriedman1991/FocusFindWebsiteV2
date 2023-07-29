@@ -124,6 +124,7 @@ const Header = () => {
                   )}
                   aria-current={selectedItem === item.name ? 'page' : undefined}
                   onClick={() => setSelectedItem(item.name)}
+                  onSetActive={() => setSelectedItem(item.name)}
                 >
                   {item.name}
                 </Link>
