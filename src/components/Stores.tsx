@@ -1,6 +1,7 @@
+import React from 'react';
 import HeaderCapsuelNew from '../assets/Header\ Capsuel\ New.png';
 
-const Stores = () => {
+const Stores: React.FC = () => {
     return (
         <div id="Stores" className="bg-transparent">
           <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">

@@ -1,3 +1,4 @@
+import React from 'react';
 import VerticalCapsuleNew from '../assets/Verticle\ Capsuel\ NEW.png';
 
 const stats = [
@@ -6,7 +7,7 @@ const stats = [
     { id: 3, name: 'Collect memories and re-discover who you are while going through the different stages of grief', value: 'Find Your Escape', image: VerticalCapsuleNew },
   ]
   
-  const Features = () => {
+  const Features: React.FC = () => {
     return (
       <div id="Features" className="relative py-24 sm:py-32 flex items-center justify-center isolate overflow-x-hidden overflow-y-auto py-24 sm:py-16 min-h-screen">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

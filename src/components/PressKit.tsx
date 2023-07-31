@@ -1,3 +1,4 @@
+import React from 'react';
 import ImageCard from './ImageCard';
 import MainCapsuelNew from '../assets/Main\ Capsuel\ New.png';
 import HeaderCapsuelNew from '../assets/Header\ Capsuel\ New.png';
@@ -38,7 +39,7 @@ const products = [
     },
 ]
 
-const PressKit = () => {
+const PressKit: React.FC = () => {
     return (
         <div id="Press Kit" className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
@@ -157,7 +158,7 @@ const PressKit = () => {
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         <div className="relative flex items-center justify-center isolate overflow-x-hidden overflow-y-auto">
                             <div className="aspect-w-16 aspect-h-9 max-w-xs mx-auto flex items-center justify-center">
-                                <iframe src="https://www.youtube.com/embed/NaaZTINIz20" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full"></iframe>
+                                <iframe id="iframe2" src="https://www.youtube.com/embed/NaaZTINIz20" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-full"></iframe>
                             </div>
                         </div>
                     </div>

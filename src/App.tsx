@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+import LoadingPage from './components/LoadingPage';
 import Header from './components/Header';
 import About from './components/About';
 import Features from './components/Features';
@@ -30,7 +32,23 @@ const socialLinks = [
   { source: deviantart, href: 'https://www.deviantart.com/jumpbutton-studio/gallery/'}
 ]
 
-const App = () => {
+const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(loadingTimeout);
+  }), [];
+
+  if (isLoading) {
+    return (
+      <LoadingPage />
+    );
+  }
+
   return (
     <>
       <div className="background pt-16">
@@ -43,7 +61,7 @@ const App = () => {
         <Footer socialLinks={socialLinks} />
       </div>
     </>
-  )
+  );
 }
 
 export default App
