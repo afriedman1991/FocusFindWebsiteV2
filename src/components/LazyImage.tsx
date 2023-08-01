@@ -18,13 +18,10 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, className }) => {
       let observer: IntersectionObserver;
       let didCancel = false;
   
-      console.log('Setting up IntersectionObserver'); // Log message
-  
       if (imageRef.current && imageSrc === '') {
         observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              console.log('Observer Entry:', entry); // Log entry
   
               if (!didCancel && (entry.intersectionRatio > 0 || entry.isIntersecting)) {
                 onLoadImage();
@@ -34,7 +31,7 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, className }) => {
               }
             });
           },
-          { rootMargin: '0px 0px 200px 0px', threshold: 0 } // Added root margin and threshold
+          { rootMargin: '0px 0px 200px 0px', threshold: 0 }
         );
         if (imageRef.current) {
           observer.observe(imageRef.current);

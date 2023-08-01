@@ -26,7 +26,7 @@ const About: React.FC<LinkListProps> = ({ links, socialLinks }) => {
       <div className="relative flex flex-col items-center">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="line-clamp-3 text-4xl font-bold tracking-tight text-white sm:text-2xl md:text-xl lg:text-2xl xl:text-4xl text-shadow">Focus Find</h2>
+            <h2 className="line-clamp-3 text-4xl font-bold tracking-tight text-white sm:text-2xl md:text-xl lg:text-2xl xl:text-4xl text-shadow">About Focus Find</h2>
             <p className="mt-3 line-clamp-5 text-xl sm:text-2xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl leading-8 text-gray-300 text-shadow">
               Focus Find is a 2D puzzle platformer narrative game. In this thrilling story about grief, you play as Adam; well his mind at least. With Dr. Bardell as your guide, you relive painful memories from your life in order to repair your brain and awake from your coma. As you delve deeper into your own mind not everything is as it seems. Mysterious memories lead you to discover startling truths. The game has been designed to be played with only 1 joystick yet still be a fun, immersive experience. Focus Find is therefore accessible and approachable for gamers and non-gamers of all abilities.
             </p>
