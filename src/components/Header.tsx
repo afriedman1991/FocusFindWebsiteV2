@@ -4,6 +4,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import VerticalCapsuleNew from '../assets/Verticle\ Capsuel\ NEW.png';
 import jobo from '../assets/jobo.png';
+import LazyImage from './LazyImage';
 
 const navigation = [
   { name: 'About', href: '#', current: true },
@@ -87,10 +88,10 @@ const Header: React.FC = () => {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div>
                     <a href="https://www.jumpbutton.com" target="_blank">
-                      <img
+                      <LazyImage
                         className="h-8 w-8 rounded-full"
                         src={jobo}
-                        alt=""
+                        alt="jumpbutton studio logo"
                       />
                     </a>
                 </div>

@@ -3,7 +3,9 @@
 @tailwind utilities;
 @layer utilities {
     .text-shadow {
-        text-shadow: 0 0px 3px rgba(1, 1, 1, 1);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
     }
 }
 

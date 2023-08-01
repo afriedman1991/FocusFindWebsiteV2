@@ -1,41 +1,46 @@
 import React from 'react';
-import ImageCard from './ImageCard';
 import MainCapsuelNew from '../assets/Main\ Capsuel\ New.png';
 import HeaderCapsuelNew from '../assets/Header\ Capsuel\ New.png';
 import VerticleCapsuelNew from '../assets/Verticle\ Capsuel\ New.png';
 import PageBackgroundNew from '../assets/Page\ Background\ New.png';
 import jobo from '../assets/jobo.png';
+import LazyImage from './LazyImage';
 
 const products = [
     {
       id: 1,
       href: '#',
       imageSrc: MainCapsuelNew,
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Game art",
+      className: "h-full w-full object-contain lg:h-full lg:w-full"
     },
     {
       id: 2,
       href: '#',
       imageSrc: HeaderCapsuelNew,
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Game art",
+      className: "h-full w-full object-contain lg:h-full lg:w-full"
     },
     {
       id: 3,
       href: '#',
       imageSrc: VerticleCapsuelNew,
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Game art",
+      className: "h-full w-full object-contain lg:h-full lg:w-full"
     },
     {
       id: 4,
       href: '#',
       imageSrc: PageBackgroundNew,
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Game art",
+      className: "h-full w-full object-contain lg:h-full lg:w-full"
     },
     {
       id: 5,
       href: '#',
       imageSrc: jobo,
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Jumpbutton Studio logo",
+      className: "h-full w-full object-contain lg:h-full lg:w-full"
     },
 ]
 
@@ -72,7 +77,7 @@ const PressKit: React.FC = () => {
                     </div>
                 </div>
                 <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                    <img
+                    <LazyImage
                         className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:w-[42.25rem] lg:w-[30rem]"
                         src={MainCapsuelNew}
                         alt=""
@@ -117,14 +122,31 @@ const PressKit: React.FC = () => {
                                 </li>
                                 <li className="flex gap-x-3">
                                     <span className="text-gray-300 text-shadow">
-                                        <strong className="font-semibold text-3xl">Social Channels:</strong> <a href="https://www.facebook.com/JumpButtonStudio" target="_blank" className="ml-2">Facebook,</a>
-                                                <a href="https://twitter.com/JumpButtonS" target="_blank" className="ml-2">Twitter,</a>
-                                                <a href="https://www.instagram.com/jumpbuttonstudio/" target="_blank" className="ml-2">Instagram,</a>
-                                                <a href="https://www.youtube.com/@JumpButtonStudio" target="_blank" className="ml-2">YouTube,</a>
-                                                <a href="https://www.tiktok.com/@jumpbuttonstudio" target="_blank" className="ml-2">TikTok,</a>
-                                                <a href="https://www.linkedin.com/company/jumpbuttonstudio" target="_blank" className="ml-2">LinkedIn,</a>
-                                                <a href="https://linktr.ee/jumpbuttonstudio" target="_blank" className="ml-2">Linktree,</a>
-                                                <a href="https://www.deviantart.com/jumpbutton-studio/gallery/" target="_blank" className="ml-2">DeviantArt,</a>
+                                        <strong className="font-semibold">Social Channels:</strong> <a href="https://www.facebook.com/JumpButtonStudio" target="_blank" className="ml-2">Facebook,</a>
+                                        <a href="https://twitter.com/JumpButtonS" target="_blank" className="ml-2">Twitter,</a>
+                                        <a href="https://www.instagram.com/jumpbuttonstudio/" target="_blank" className="ml-2">Instagram,</a>
+                                        <a href="https://www.youtube.com/@JumpButtonStudio" target="_blank" className="ml-2">YouTube,</a>
+                                        <a href="https://www.tiktok.com/@jumpbuttonstudio" target="_blank" className="ml-2">TikTok,</a>
+                                        <a href="https://www.linkedin.com/company/jumpbuttonstudio" target="_blank" className="ml-2">LinkedIn,</a>
+                                        <a href="https://linktr.ee/jumpbuttonstudio" target="_blank" className="ml-2">Linktree,</a>
+                                        <a href="https://www.deviantart.com/jumpbutton-studio/gallery/" target="_blank" className="ml-2">DeviantArt,</a>
+                                    </span>
+                                </li>
+                                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-300 text-shadow sm:text-4xl">Contact Information</h1>
+                                <li className="flex gap-x-3">
+                                    <span className="text-gray-300 text-shadow">
+                                        <strong className="font-semibold">JumpButton Studio Digital PR Team</strong>
+                                        <div className="ml-2">John Appleseed: j.ap@jumpbuttonstudio.com</div>
+                                        <div className="ml-2">John Doe: john.doe@jumpbuttonstudio.com</div>
+                                        <div className="ml-2">Jane Doe: jane.doe@jumpbuttonstudio.com</div>
+                                    </span>
+                                </li>
+                                <li className="flex gap-x-3">
+                                    <span className="text-gray-300 text-shadow">
+                                        <strong className="font-semibold">JumpButton Studio Influencer Team</strong>
+                                        <div className="ml-2">John Appleseed: j.ap@jumpbuttonstudio.com</div>
+                                        <div className="ml-2">John Doe: john.doe@jumpbuttonstudio.com</div>
+                                        <div className="ml-2">Jane Doe: jane.doe@jumpbuttonstudio.com</div>
                                     </span>
                                 </li>
                             </ul>
@@ -137,7 +159,7 @@ const PressKit: React.FC = () => {
                     <h2 className="text-3xl font-bold tracking-tight text-gray-300 text-shadow">Art and Logos</h2>
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
-                            <ImageCard key={product.id} product={product} />
+                            <LazyImage src={product.imageSrc} className={product.className} alt={product.imageAlt} />
                         ))}
                     </div>
                 </div>
@@ -147,7 +169,7 @@ const PressKit: React.FC = () => {
                     <h2 className="text-3xl font-bold tracking-tight text-gray-300 text-shadow">Screenshots</h2>
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
-                            <ImageCard key={product.id} product={product} />
+                            <LazyImage src={product.imageSrc} className={product.className} alt={product.imageAlt} />
                         ))}
                     </div>
                 </div>

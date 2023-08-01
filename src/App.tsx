@@ -22,14 +22,14 @@ const links = [
     { name: 'Company Website', href: 'https://www.jumpbutton.com/' },
 ]
 const socialLinks = [
-  { source: facebook, href: 'https://www.facebook.com/JumpButtonStudio' },
-  { source: twitter, href: 'https://twitter.com/JumpButtonS' },
-  { source: instagram, href: 'https://www.instagram.com/jumpbuttonstudio/' },
-  { source: youtube, href: 'https://www.youtube.com/@JumpButtonStudio' },
-  { source: tiktok, href: 'https://www.tiktok.com/@jumpbuttonstudio'},
-  { source: linkedin, href: 'https://www.linkedin.com/company/jumpbuttonstudio/'},
-  { source: linktree, href: 'https://linktr.ee/jumpbuttonstudio'},
-  { source: deviantart, href: 'https://www.deviantart.com/jumpbutton-studio/gallery/'}
+  { source: facebook, href: 'https://www.facebook.com/JumpButtonStudio', alt: 'Facebook logo' },
+  { source: twitter, href: 'https://twitter.com/JumpButtonS', alt: 'Twitter logo' },
+  { source: instagram, href: 'https://www.instagram.com/jumpbuttonstudio/', alt: 'Instagram logo' },
+  { source: youtube, href: 'https://www.youtube.com/@JumpButtonStudio', alt: 'YouTube logo' },
+  { source: tiktok, href: 'https://www.tiktok.com/@jumpbuttonstudio', alt: 'TikTok logo' },
+  { source: linkedin, href: 'https://www.linkedin.com/company/jumpbuttonstudio/', alt: 'LinkedIn logo' },
+  { source: linktree, href: 'https://linktr.ee/jumpbuttonstudio', alt: 'Linktree logo' },
+  { source: deviantart, href: 'https://www.deviantart.com/jumpbutton-studio/gallery/', alt: 'DeviantArt logo' }
 ]
 
 const App: React.FC = () => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderCapsuelNew from '../assets/Header\ Capsuel\ New.png';
+import LazyImage from './LazyImage';
 
 const Stores: React.FC = () => {
     return (
@@ -34,12 +35,10 @@ const Stores: React.FC = () => {
                 </div>
               </div>
               <div className="relative mt-16 h-80 lg:mt-8 flex items-center justify-center">
-                <img
+                <LazyImage
                   className="absolute left-0 w-[36rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                   src={HeaderCapsuelNew}
                   alt="App screenshot"
-                  width={1824}
-                  height={1080}
                 />
               </div>
             </div>

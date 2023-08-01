@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from "./LazyImage";
 
 interface Link {
   name: string,
@@ -7,7 +8,8 @@ interface Link {
 
 interface SocialLink {
   source: string,
-  href: string
+  href: string,
+  alt: string
 }
 
 interface LinkListProps {
@@ -40,11 +42,11 @@ const About: React.FC<LinkListProps> = ({ links, socialLinks }) => {
             <div className="mx-auto max-w-2xl lg:mx-0">
                 <h1 className="mt-7 sm:mt-20 md:mt-10 lg:mt-5 xl:mt-8 text-xl font-bold tracking-tight text-white sm:text-5xl lg:text-xl xl:text-4xl text-shadow">Follow us on Social Media</h1>
               </div>
-            <dl className="mt-8 lg:mt-5 xl:mt-8 grid grid-cols-4 gap-7 sm:mt-20 sm:grid-cols-4 sm:mt-11 md:grid-cols-8 md:mt-10 lg:grid-cols-8 text-shadow">
+            <dl className="mt-8 lg:mt-5 xl:mt-8 grid grid-cols-4 gap-7 sm:mt-20 sm:grid-cols-4 sm:mt-11 md:grid-cols-8 md:mt-10 lg:grid-cols-8">
               {socialLinks.map((company, ind) => (
                 <div key={ind} className="flex flex-col-reverse">
                   <a href={`${company.href}`} target="_blank">
-                    <img src={company.source} className="w-8 h-8 sm:w-9 sm:h-9 md:w-16 md:h-16 lg:w-6 lg:h-6 xl:w-20 xl:h-20" />
+                    <LazyImage src={company.source} alt={company.alt} className="w-8 h-8 sm:w-9 sm:h-9 md:w-16 md:h-16 lg:w-6 lg:h-6 xl:w-20 xl:h-20" />
                   </a>
                 </div>
               ))}
