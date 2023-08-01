@@ -4,5 +4,5 @@
 
 `npm run dev`
 
-## Testing
+## Unit Testing
 `npm run test`
