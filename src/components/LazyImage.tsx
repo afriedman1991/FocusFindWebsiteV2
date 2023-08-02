@@ -40,7 +40,7 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, alt, className }) => {
       return () => {
         didCancel = true;
         if (observer && observer.unobserve && imageRef.current) {
-          observer.unobserve(imageRef.current);
+          observer.unobserve(imageRef.current as Element);
         }
       };
     }, [imageSrc, src]);

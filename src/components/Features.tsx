@@ -10,7 +10,7 @@ const stats = [
   
 const Features: React.FC = () => {
   return (
-    <div id="Features" className="relative py-24 sm:py-32 flex items-center justify-center isolate overflow-x-hidden overflow-y-auto py-24 sm:py-16 min-h-screen">
+    <div id="Features" data-testid="features" className="relative py-24 sm:py-32 flex items-center justify-center isolate overflow-x-hidden overflow-y-auto py-24 sm:py-16 min-h-screen">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat) => (

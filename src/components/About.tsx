@@ -19,7 +19,7 @@ interface LinkListProps {
 
 const About: React.FC<LinkListProps> = ({ links, socialLinks }) => {
   return (
-    <div id="About" className="relative flex flex-col items-center justify-center min-h-screen overflow-auto py-4 sm:py-6 about-page about">
+    <div id="About" data-testid="about" className="relative flex flex-col items-center justify-center min-h-screen overflow-auto py-4 sm:py-6 about-page about">
       <div 
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center background-image-div"
       />

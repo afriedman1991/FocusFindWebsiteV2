@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState('About');
 
   return (
-    <Disclosure as="nav" className="bg-gray-800 fixed w-full z-10 top-0">
+    <Disclosure as="nav" data-testid="header" className="bg-gray-800 fixed w-full z-10 top-0">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

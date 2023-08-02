@@ -14,7 +14,7 @@ interface LinkListProps {
 
 const Footer: React.FC<LinkListProps> = ({ socialLinks }) => {
   return (
-      <footer className="bg-gray-800 text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center">
+      <footer data-testid="footer" className="bg-gray-800 text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <LazyImage src={jobo} className="w-8 h-8 sm:w-9 sm:h-9 md:w-16 md:h-8 md:w-8 lg:w-18 lg:h-18 xl:w-20 xl:h-20" alt="jumpbutton studio logo" />
               <h1 className="font-normal text-xs sm:text-sm md-text-base lg:text-xl">© 2023 JumpButton Studio, All rights reserved.</h1>

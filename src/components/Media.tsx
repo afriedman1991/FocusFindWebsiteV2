@@ -2,7 +2,7 @@ import React from 'react';
 
 const Media: React.FC = () => {
     return (
-        <div id='Media' style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh'}}>
+        <div id='Media' data-testid="media" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh'}}>
             <div style={{width: '100%', maxWidth: '900px', margin: 'auto'}}>
                 <h2 style={{textAlign: 'center', fontSize: '3em', fontWeight: 'bold'}} className="text-shadow">Trailer</h2>
                 <div style={{position: 'relative', paddingBottom: '56.25%', height: '0', overflow: 'hidden'}}>
